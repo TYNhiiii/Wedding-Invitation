@@ -1,0 +1,717 @@
+@charset "utf-8";
+/* CSS Document */
+/*====FORMAT====*/
+@font-face{
+	font-family: Glamore;
+	src: url("../font/glamore-regular/Glamore Regular.otf"),
+		url("../font/glamore-regular/Glamore Regular.eot"),
+		url("../font/glamore-regular/Glamore Regular.woff");
+}
+@font-face{
+	font-family: Alex;
+	src: url("../Fontface/Alex_Brush/AlexBrush-Regular.otf"),
+		url("../Fontface/Alex_Brush/AlexBrush-Regular.eot"),
+		url("../Fontface/Alex_Brush/AlexBrush-Regular.woff");
+}
+
+@font-face{
+	font-family: SemiBold;
+	src: url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.ttf"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.eot"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.woff");
+}
+@font-face{
+	font-family: Regular;
+	src: url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.ttf"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.eot"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.woff");
+}
+@font-face{
+	font-family: Medium;
+	src: url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.ttf"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.eot"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.woff");
+}
+@font-face{
+	font-family: tThin;
+	src: url("../font/Montserrat-Thin/Montserrat-Thin.ttf"),
+		url("../font/Montserrat-Thin/Montserrat-Thin.eot"),
+		url("../font/Montserrat-Thin/Montserrat-Thin.woff");
+}
+
+/**====FONT====**/
+body{
+	font-family: Regular;
+}
+ .carousel-item {
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .carousel-caption {
+      bottom: 20%;
+    }
+   .text-with-lines {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.text-with-lines .line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #fff; 
+  margin: 0 30px; 
+}
+
+.text-with-lines .text {
+  padding: 0 20px;
+  position: relative;
+  font-style: italic; 
+  color: #fff; 
+}
+
+.texth2 {
+  text-align: center;
+	color: #EF6351;
+  font-family: 'Alex' , serif; 
+  margin-top: 20px; 
+	text-shadow: 
+    1px 1px 2px rgba(255, 255, 255, 0.9),
+    -1px -1px 2px rgba(255, 255, 255, 0.9),
+    1px -1px 2px rgba(255, 255, 255, 0.9),
+    -1px 1px 2px rgba(255, 255, 255, 0.9);
+}
+.texth3 {
+	text-align: center;
+	color: #EF6351;
+  font-family: 'Alex' , serif; 
+  margin-top: 20px;
+	
+}
+
+/**====PROMOTIONS====**/
+#bgpromotion{
+	background-color: #EF6351;
+	font-size: 10pt;
+	text-align: center;
+	position: sticky;
+	top: 0px;
+	z-index: 1000;
+	padding-top: 3px;
+	height: 40px;
+}
+/**====HEADER====**/
+#bgheader{
+	position: sticky;
+	z-index: 999;
+}
+
+/**====LOGO====**/
+#logo{
+	color: #EF6351;
+	font-family: Glamore;
+	text-decoration: none;
+	font-size: 46pt;
+}
+/**====NAVI====**/
+#bgnavi{
+	background-color: rgba(251,195,188,0.00);
+	position: sticky;
+	z-index: 1000;
+	top: 30px;
+}
+#navbar-right{
+	padding: 0px;
+}
+#navbar-right ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+#navbar-right ul li{
+	display: block;
+	float: right;
+}
+#navbar-right ul li a{
+	display: block;
+	text-decoration: none;
+	background: -webkit-linear-gradient(#EF6351, #FBC3BC,#EF6351);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	transition: all ease .5s;
+}
+/**====NAVI & LOGO SCROLL====**/
+/* Style the logo */
+#navbar #logo {
+    transition: 0.5s;
+}
+/* Style the active/current link */
+#navbar a.active {
+  	background-color: dodgerblue;
+  	color: white;
+}
+.navitop{
+	background-color: #FCFCFC !important;
+	margin-top: 30px!important;
+}
+/**====MOBILE HEADER====**/
+#mobileheaderbg{
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	position: sticky;
+	top: 0px;
+	z-index: 2000;
+	height: 50px;
+}
+
+#logomobile{
+	text-align: center;
+	font-size: 30pt;
+	font-family: Glamore;	
+}
+#logomobile a{
+	text-decoration: none;
+	color: #EF6351;
+	text-align: center; 
+}
+#logomobile p2 {
+  margin: 0; /* Remove default margins from p tags */
+}
+
+/**====MOBILE NAVI====**/
+/*==mobilenavi==*/
+#mobilenavibg{
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	z-index: 1999;
+	top: 50px;
+}
+#mobilenavi{
+	padding: 0px;
+	margin: 0px;
+}
+#mobilenavi ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#mobilenavi ul li{
+	display: block;
+}
+#mobilenavi ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 20pt;
+	font-family: Regular;
+	color: #EF6351;
+	background-color: #FFF;
+	height: 50px;
+	border-top: solid 1pt #EF6351;
+	border-bottom: solid 1pt #FBC3BC;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 15px;
+	transition: all ease .5s;
+}
+
+/*====EXTRA LARGE====*/
+@media (min-width:1200px){
+	.carousel-item {
+		height: 650px;
+	}
+	.text-with-lines .text{
+		font-size: 18pt;
+	}
+	#bgheader{
+		height: 50px;
+	}
+	#searchfill,#searchbtn{
+		height: 30px;
+	}
+	#signinup ul li a:hover{
+		background: -webkit-linear-gradient(#EF6351, #FBC3BC,#EF6351);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+		transition: all ease .5s;
+	}
+	#bgnavi{
+		
+	}
+	#bgnavi:hover{
+		background-color: #FCFCFC;
+		transition: all ease .7s;
+	}
+	#navbar-right{
+		height: 82px;
+	}
+	#navbar #logo {
+		font-size: 50pt;
+	}
+	#navbar-right ul li a{
+		font-size: 16pt;
+		font-family:SemiBold;
+		padding-left: 25px;
+		padding-right: 13px;
+		padding-top: 30px;
+	}
+	
+	#navbar-right ul li:hover{
+		background: -webkit-linear-gradient(#EF6351, #FBC3BC,#EF6351);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+		margin-top: -7px;
+		transition: all ease .5s;
+	}
+	.texth3 {
+	font-size: 40pt;
+}
+	
+	.texth2{
+		font-size: 48pt;}
+}
+/*====LARGE====*/
+@media (min-width:992px) and (max-width:1199px){
+	.carousel-item {
+		height: 500px;
+	}
+	#bgheader{
+		height: 50px;
+	}
+	#searchfill,#searchbtn{
+		height: 30px;
+	}
+	#signinup ul li a:hover{
+		background: -webkit-linear-gradient(#EF6351, #FBC3BC,#EF6351);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+		transition: all ease .5s;
+	}
+	#bgnavi{
+		
+	}
+	#bgnavi:hover{
+		background-color: #FCFCFC;
+		transition: all ease .7s;
+	}
+	#navbar-right{
+		height: 82px;
+	}
+	#navbar #logo {
+		font-size: 40pt;
+	}
+	#navbar-right ul li a{
+		font-size: 14pt;
+		font-family:SemiBold;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 30px;
+	}
+	#navbar-right ul li:hover{
+		background: -webkit-linear-gradient(#EF6351, #FBC3BC,#EF6351);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+		margin-top: -7px;
+		transition: all ease .5s;
+	}
+	
+		#mobilenavi ul li a:hover{
+		background-color: #666666;
+		transition: all ease .5s;
+	}
+	
+	.texth3 {
+	font-size: 40pt;
+}
+	.texth2{
+		font-size: 28pt;}
+	.text-with-lines .text{
+		font-size: 18pt;
+	}
+}
+/*====MEDIUM====*/
+@media (min-width:768px) and (max-width:991px){
+	.carousel-item {
+		height: 400pt;
+	}
+	#bgheader{
+		height: 35px;
+	}
+	#bgnavi{
+		
+		background-color: #FCFCFC;
+	}
+	#navbar-right{
+		height: 60px !important;
+	}
+	#navbar #logo{
+		display: block;
+		font-size: 32pt !important;
+		padding-top: 12px;
+	}
+	#navbar{
+		margin-top: -15px;
+	}
+	#navbar-right ul li a{
+		font-size: 12pt;
+		font-family:SemiBold; 
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 15px;
+	}
+	.texth3 {
+	font-size: 40pt;
+}
+	.texth2{
+		font-size: 30pt;}
+	.text-with-lines .text{
+		font-size: 16pt;
+	}
+}
+/*====SMALL====*/
+@media (min-width:576px) and (max-width:767px){
+	.carousel-item {
+		height: 300pt;
+	}
+	
+	.texth2{
+		font-size: 20pt;}
+	.text-with-lines .text{
+		font-size: 14pt;
+	}
+	.texth3 {
+	font-size: 38pt;
+}
+	
+}
+/*====EXTRA SMALL====*/
+@media (max-width:575px){
+	.carousel-item {
+		height: 300pt;
+	}
+	
+	
+	#logomobile{
+		font-size: 20pt;
+		margin-top: 8px;
+	}
+	/*==footersm==*/
+	#bgfootermb{
+		background-color: #EF6351;
+	}
+	
+	.texth2{
+		font-size: 18pt;
+	}
+	.text-with-lines .text{
+		font-size: 14pt;
+	}
+	.texth3 {
+	font-size: 34pt;
+}
+}
+
+
+.container1 {
+  text-align: center;
+  width: 100%; 
+  margin-top: 30px;
+  background-color: #fffefa; /* Your chosen pastel color */
+	padding: 30px 15px 30px 15px;
+}
+.inner-content {
+  max-width: 1200px; /* This restricts the content width */
+  margin: auto; /* Centers the inner content */
+}
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.header p {
+  font-size: 14pt;;
+  margin-bottom: 0.5rem;
+}
+
+
+.profile-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+/* Custom CSS */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+	
+}
+.text-center{
+	margin-top: 60px;
+}
+/* Invitation section styling */
+.invitation-title {
+  font-size: 2.5rem;
+  color: #EF6351;
+  display: inline-block;
+  position: relative;
+  padding: 0 15px; /* Provides spacing so lines do not touch the text */
+}
+
+.invitation-title::before,
+.invitation-title::before,
+.invitation-title::after {
+  content: '';
+  background: #EF6351; /* Color of the lines */
+  height: 2px; /* Thickness of the lines */
+  width: 20px; /* Length of the lines */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.invitation-title::before {
+  left: -30px; /* Adjust left spacing based on your layout */
+}
+
+.invitation-title::after {
+  right: -30px; /* Adjust right spacing based on your layout */
+}
+
+/* Ensure the title is centered on the page */
+.text-center {
+  text-align: center;
+}
+
+/* Adjust image and title container */
+.text-center img {
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add space below */
+}
+
+/* Responsive adjustments for the title decoration */
+@media (max-width: 768px) {
+  .invitation-title::before,
+  .invitation-title::after {
+    width: 15px; /* Shorter lines for smaller screens */
+  }
+
+  .invitation-title::before {
+    left: -25px; /* Adjust left spacing for smaller screens */
+  }
+
+  .invitation-title::after {
+    right: -25px; /* Adjust right spacing for smaller screens */
+  }
+}
+
+
+/* Ceremony section styling */
+.bg-ceremony {
+  background-color: #fffefa; /* Same color as the invitation section for consistency */
+  padding: 30px 0;
+	margin-top: 30px;
+}
+.ceremony-content{
+	text-align: center;
+}
+
+.ceremony-content h2 {
+  margin-top: 20px;
+  color: #462108;
+}
+
+.ceremony-content h5 {
+  color: #EF6351;
+}
+
+.ceremony-content p {
+  margin: 20px 0;
+	font-size: 14pt;
+}
+
+/* Wedding party section styling */
+.bg-wedding-party {
+  background-color: #fffefa;
+  padding: 30px 0;
+	text-align: center;
+}
+
+.wedding-party-content h2 {
+  margin-top: 20px;
+  color: #462108;
+}
+
+.wedding-party-content h5 {
+  color: #EF6351;
+}
+
+.wedding-party-content p {
+  margin: 20px 0;
+	font-size: 14pt;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.crypto-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+/* This assumes you have Font Awesome or another icon library included for the crypto icons */
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .img-decoration,
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+.card {
+ 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s;
+  border-radius: 10px;
+  padding: 2rem;
+  border: none;
+  margin: 1rem;
+}
+.card:hover {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3); 
+}
+.profile-circle {
+  height: 350px; /* Adjust size as necessary */
+  width: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  margin: auto;
+}
+
+.card h3 {
+  font-size: 28pt;
+  color: #333; /* Dark text for names */
+  margin: 1rem 0;
+}
+
+.card p {
+  color: #000; 
+	
+}
+.img1{
+	height: 100px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.message-section {
+	margin-top: 60px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding-top: 60px; /* Space from the top */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.message-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.message-section h2,
+.message-section .date,
+.message-section p {
+  color: white;
+  z-index: 2;
+}
+
+.message-section h2 {
+  font-size: 3rem;
+	color: #EF6351;
+}
+
+.message-section .date {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.message-section p {
+  max-width: 800px; /* Set a max-width for optimal reading */
+  margin-bottom: 2rem;
+}
+
+
+/* Add responsive design as needed */
+@media (max-width: 768px) {
+  .message-section .btn-send-wishes,
+  .message-section p {
+    width: 90%;
+  }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .profile-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    margin: 1rem auto;
+  }
+}
+.centered-text {
+	font-family: Medium; 
+  font-size: 20pt; /* size of your text */
+  color: #EF6351; /* color of your text */
+  /* Add more styling as needed */
+	text-shadow: 
+    1px 1px 2px rgba(255, 255, 255, 0.9),
+    -1px -1px 2px rgba(255, 255, 255, 0.9),
+    1px -1px 2px rgba(255, 255, 255, 0.9),
+    -1px 1px 2px rgba(255, 255, 255, 0.9);
+}
+.background-layer {
+  position: relative;
+  background-image: url('../imgabout/2148029269.jpg');
+	opacity: 0.9;
+  background-size: cover;
+  height: 500px; /* Adjust the height as needed */
+	text-align: center;
+	padding-top: 40px;
+}
+
+.foreground-image {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 15px; /* Adjust the pixel value to increase or decrease the roundness */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adjust values for x-offset, y-offset, blur-radius, and color as needed */
+}
+
+
+
+
+
+
+

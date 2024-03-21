@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+	  <link href="css/aboutus.css" rel="stylesheet">
+	<link href="font/FontAwesome.Pro.6.4.2/css/all.css" rel="stylesheet">
+	<!-- jQuery  --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	
+	
+	  <script>
+		$(document).ready(function(){
+			$("#mobilenavibg").hide();
+			$("#bgmobilesearch").hide();
+			$("#blackscreen").hide();
+			
+			$("#blackscreen").click(function(){
+				$("#mobilenavibg").slideUp();
+				$(this).fadeOut();
+			})
+			
+			$("#triggermobilenavi").click(function(){
+				$("#mobilenavibg").slideToggle();
+				$("#bgmobilesearch").slideUp();
+				$("#blackscreen").fadeToggle();
+			})
+			
+			$(".triggermobilesearch").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#mobilenavibg").slideUp();
+				$("#blackscreen").fadeOut();
+			})
+		})
+		  
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			
+			if (scroll >= 50) {
+				$("#bgnavi").addClass("navitop");
+				$("#navbar").css("padding-top","5px");
+				$("#navbar").css("padding-left","10px");
+				$("#logo").css("font-size","28pt");
+				$("#bgnavi").css("height","60px");
+				$("#navbar-right ul li a").css("padding-top","15px");
+			} else {
+				$("#bgnavi").removeClass("navitop");
+				$("#navbar").css("padding-top","0px");
+				$("#navbar").css("padding-left","10px");
+				$("#logo").css("font-size","40pt");
+				$("#bgnavi").css("height","82px");
+				$("#navbar-right ul li a").css("padding-top","20px");
+				$("#bgpromotion").css("padding-top", "0px");
+			}
+		})
+	</script>
+  </head>
+  <body>
+	<!--BLACKSCREEN-->
+	  <div class="container-fluid" id="blackscreen"></div><!--blackscreen-->  
+	<!--PROMOTIONS-->
+	<div class="container-fluid d-none d-md-block" id="bgpromotion">
+		<div class="container">
+		<div class="row justify-content-center ">
+			<div class="col-xl-12
+						col-lg-12
+						col-md-12" id="textpromo">HAPPY WEDDING DAY 25.05.24 </div>
+		</div>
+			</div>
+		</div>
+	<!--HEADER-->	
+	<!--NAVI & LOGO-->
+	<div class="container-fluid d-none d-md-block" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12
+							col-lg-12
+							col-md-12
+							d-none d-md-block">
+					<div id="navbar">
+					  <a href="#home" id="logo">H&N</a><!--logo-->
+					</div>
+				</div>
+		    </div>
+		</div>
+	</div><!--navi-->
+	<!--MOBILE HEADER-->
+	<div class="container-fluid d-block d-md-none" id="mobileheaderbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12
+							col-12 d-block d-md-none" id="logomobile">
+					<a href=""><p2>H&N</p2> - <p2>25.05.24</p2></a>
+				</div>
+			</div>
+		</div>
+		</div>
+	<!--MOBILE NAVI-->
+	
+		
+
+	<!--BỎ SẢN PHẨM TẠI ĐÂY >>>>-->
+	<div id="weddingCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#weddingCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#weddingCarousel" data-slide-to="1"></li>
+    <li data-target="#weddingCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('imgabout/CH1_0801.JPG');">
+      <div class="carousel-caption ">
+        <div class="text-with-lines">
+          <span class="line"></span>
+          <span class="text">THE WEDDING OF</span>
+          <span class="line"></span>
+        </div>
+        <h2 class="texth2">Triệu Phú Hữu & Trần Yến Nhi</h2>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('imgabout/CH1_0902.JPG');">
+      <div class="carousel-caption ">
+        <div class="text-with-lines">
+          <span class="line"></span>
+          <span class="text">THE WEDDING OF</span>
+          <span class="line"></span>
+        </div>
+        <h2 class="texth2">Triệu Phú Hữu & Trần Yến Nhi</h2>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('imgabout/CH1_0935.JPG');">
+      <div class="carousel-caption ">
+        <div class="text-with-lines">
+          <span class="line"></span>
+          <span class="text">THE WEDDING OF</span>
+          <span class="line"></span>
+        </div>
+        <h2 class="texth2">Triệu Phú Hữu & Trần Yến Nhi</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#weddingCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#weddingCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+	  <!--aboutus1-->
+	   <!-- Invitation Section -->
+  <section class="container text-center">
+    <img src="imgabout/wedding-rings_7487987.png" alt="Decoration Image" class="decoration-img">
+    <h2 class="invitation-title">Groom & Bride</h2>
+    <!-- Additional content -->
+  </section>
+
+		   
+	  <div class="container1">
+		  <div class="inner-content">
+  <div class="header">
+    <p>Tụi mình đang chuẩn bị cho một ngày vô cùng quan trọng – ngày tụi mình sẽ nói lời "Thề nguyện". Cùng nhau, chúng mình đã đi qua nhiều chặng đường, từ những khoảnh khắc bình dị cho tới những giây phút không thể nào quên. Và bây giờ, tụi mình muốn mời bạn tham gia và chứng kiến từng bước chân đến với ngày trọng đại của tụi mình. Cùng xem tiếp nha!</p>
+  </div>
+  
+  <div class="profile-cards">
+    <div class="card groom">
+      <div class="profile-circle" style="background-image: url('imgabout/CH1_1056.JPG');"></div>
+      <p class="texth3">Triệu Phú Hữu</p>
+      <p>Xin chào! Tôi đang chuẩn bị cho một trong những bước ngoặt quan trọng nhất của cuộc đời – cưới cô bé phi thường ở bên cạnh tôi. Sự hiện diện của cô ấy là nguồn ấm áp trong thế giới của tôi. Hãy ở lại và tham gia cùng chúng tôi trên hành trình đến với ngày trọng đại</p>
+      <div class="social-icons">
+        <!-- Icons code here -->
+      </div>
+    </div>
+    
+    <div class="card bride">
+      <div class="profile-circle" style="background-image: url('imgabout/CH1_0341 (1).JPG');"></div>
+      <p class="texth3">Trần Yến Nhi</p>
+      <p>Mừng bạn đến với góc tình yêu của chúng tôi! Tôi đã nói "Tôi đồng ý" với người đàn ông bên cạnh tôi, người đã cho tôi thấy tình yêu và niềm vui tràn ngập. Anh ấy là người bạn tâm giao, và sắp tới, là chồng của tôi. Hãy cùng khám phá câu chuyện của chúng tôi và ăn mừng mỗi bước đi đến với mãi mãi bên nhau</p>
+      <div class="social-icons">
+        <!-- Icons code here -->
+      </div>
+    </div>
+  </div>
+			   </div>
+</div>
+
+	  <!--aboutus2-->
+	  <div class="message-section" style="background-image: url('imgabout/CH1_1366.JPG');">
+  <div class="message-overlay">
+    <h2>Lời Ngỏ</h2>
+    <p class="date">04 / 04 / 2024</p>
+    <p>Thật vui vì được gặp và đón tiếp các bạn trong một dịp đặc biệt như đám cưới của chúng tôi. Chúng tôi muốn gửi đến bạn những lời cảm ơn sâu sắc nhất và để bạn biết chúng tôi rất hạnh phúc khi thấy bạn ở đó. Cảm ơn các bạn rất nhiều vì sự hiện diện cùng những lời chúc tốt đẹp mà bạn đã dành cho chúng tôi!</p>
+
+  </div>
+</div>
+
+	  <!--aboutus2-->
+	  <!--invi-->
+	<!-- Invitation Section -->
+  <section class="container text-center">
+    <img src="imgabout/cheers_4521086 (1).png" alt="Decoration Image" class="decoration-img">
+    <h2 class="invitation-title">Thư mời</h2></section>
+<!-- Ceremony Section -->
+	  
+<div class="container-fluid bg-ceremony">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 ceremony-content"><img src="imgabout/church_2404447.png">
+        <h2>THÁNH LỄ HÔN PHỐI</h2>
+        <h5>24.05.2024</h5>
+        <p>
+          Trong niềm hân hoan và tạ ơn Chúa, chúng tôi: Phaolo - Vincente Triệu Phú Hữu và Catarina Siêna Trần Yến Nhi, hân hạnh thông báo rằng chúng tôi sẽ chính thức đồng lòng trong Thánh Lễ Hôn Phối diễn ra ngày 24.05.2024. Bởi lẽ tình yêu và sự gắn kết mà Chúa ban tặng, chúng tôi mong muốn mời bạn đến làm chứng cho ngày vui và chung vui trong hạnh phúc mà Chúa đã sắp đặt. Chúng tôi trân trọng kính mời bạn đến chia sẻ niềm vui này và chúc phúc cho hành trình mới của chúng tôi.
+        </p>
+        <img class="img-fluid" src="imgabout/TPH&TYN_240524@.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Wedding Party Section -->
+<div class="container-fluid bg-wedding-party">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 wedding-party-content"><img src="imgabout/wedding-arch_9812518.png">
+        <h2>LỄ ĐÁM CƯỚI</h2>
+        <h5>25.05.2024</h5>
+        <p>
+          Và như một lời hồi đáp đối với những phước lành Chúa trao, buổi tiệc mừng hôn lễ của chúng tôi sẽ được tổ chức tại Luxury Palace, ngày 25.05.2024. Chúng tôi mong chờ niềm hạnh phúc khi được chia sẻ với bạn bữa tiệc ấm cúng này - nơi tình yêu, tình bạn, và tình thân sẽ cùng hòa quyện, ghi dấu lên từng trang mới của cuộc đời chúng tôi.
+        </p>
+        <img class="img-fluid" src="imgabout/TPH&TYN_250524.png">
+      </div>
+    </div>
+  </div>
+</div>
+	  <!-- Invitation Section -->
+  <section class="container text-center">
+    <img src="imgabout/heart_14830933 (1).png" alt="Decoration Image" class="decoration-img">
+    <h2 class="invitation-title">LIÊN HỆ</h2></section>
+	  <!-- Begin gift contribution section -->
+<div class="container my-5">
+    <div class="row">
+        <!-- Bank information card -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mừng cưới đến chú rể</h5>
+                    <img src="path_to_qr_code_image" alt="QR Code" class="img-fluid my-3">
+                    <p class="card-text">
+                        Ngân hàng: VPBank<br>
+                        Tên tài khoản: 12345678910<br>
+                        Số tài khoản: Triệu Phú Hữu<br>
+                        Chi nhánh: TPHCM
+                    </p>
+                    <hr>
+                    <p>Thông tin ví MoMo: 0784424878</p>
+                    <!-- Crypto icons -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- ... Repeat for the second card for the bride ... -->
+		 <div class="col-md-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mừng cưới đến chú rể</h5>
+                    <img src="path_to_qr_code_image" alt="QR Code" class="img-fluid my-3">
+                    <p class="card-text">
+                        Ngân hàng: TPBank<br>
+                        Tên tài khoản: 12345678910<br>
+                        Số tài khoản: Trần Yến Nhi<br>
+                        Chi nhánh: TPHCM
+                    </p>
+                    <hr>
+                    <p>Thông tin ví MoMo: 0784424878</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End gift contribution section -->
+		
+<div class="background-layer">
+  <img src="imgabout/CH1_1673.JPG" alt="Foreground Image" class="foreground-image"/>
+  <!-- Rest of your content --> <div class="container-fluit centered-text">Sự hiện diện của bạn là niềm vinh dự cho chúng tôi</div>
+</div>
+
+
+
+
+	</body>
+</html>

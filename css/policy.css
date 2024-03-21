@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: Glamore;
+	src: url("../font/glamore-regular/Glamore Regular.otf"),
+		url("../font/glamore-regular/Glamore Regular.eot"),
+		url("../font/glamore-regular/Glamore Regular.woff");
+}
+@font-face{
+	font-family: SemiBold;
+	src: url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.ttf"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.eot"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.woff");
+}
+@font-face{
+	font-family: Regular;
+	src: url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.ttf"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.eot"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.woff");
+}
+@font-face{
+	font-family: Medium;
+	src: url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.ttf"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.eot"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.woff");
+}
+@font-face{
+	font-family: Light;
+	src: url("../font/montserrat/Montserrat-Light/Montserrat-Light.ttf"),
+		url("../font/montserrat/Montserrat-Light/Montserrat-Light.eot"),
+		url("../font/montserrat/Montserrat-Light/Montserrat-Light.woff");
+}
+@font-face{
+	font-family: Thin;
+	src: url("../font/montserrat/Montserrat-Thin/Montserrat-Thin.ttf"),
+		url("../font/montserrat/Montserrat-Thin/Montserrat-ThinItalic.eot"),
+		url("../font/montserrat/Montserrat-Thin/Montserrat-Thin.woff");
+}
+
+body{
+	font-family: Light;
+	 line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Glamore;
+	 line-height: 1.6;
+	color: #000;
+}
+
+.head{
+	text-align: center;
+	margin-bottom: 40px;
+	
+}
+
+/*====BREADCRUMB====*/
+#pagelink{
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+#pagelink ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pagelink ul li{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 16pt;
+}
+#pagelink ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 16pt;
+	color: #000000;
+	margin-top: 2px;
+	transition: all ease .5s;
+}
+.holdname{
+	color: #EF6351 !important;
+}
+/*Banner*/
+
+.carousel-indicators li{
+	border: solid 1pt #EF6351;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+}
+.carousel-indicators .active{
+	background-color: #EF6351;
+}
+.breadcrumb{
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.breadcrumb-item a{
+	color: #EF6351;
+}
+.btn-group{
+	background-color: #FFF;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	float: right;
+}
+.btn-secondary{
+	background-color: #EF6351;
+}
+.btn-secondary:hover{
+	background-color: #FFF;
+	color: #EF6351;	
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+	box-shadow: none;
+	background-color: #FFF;
+	border: solid 1pt #EF6351;
+	color: #EF6351;
+}
+.btn-secondary:focus, .btn-secondary.focus{
+	border: none;
+	background-color: #EF6351;
+	color: #FFF;	
+	box-shadow: none;
+}
+.hoverbtn{
+	display: block;
+	text-decoration: none;
+	background-color: #FBC3BC;
+	height: 50px;
+	color: #EF6351 !important;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all ease .5s;
+	border-radius: 5px;
+}
+.hoverbtn:hover{
+	background-color: #EF6351;
+	color: #FCFCFC !important;
+	transition: all ease .5s;
+}
+
+@media (min-width: 1200px){
+	#banner{
+		margin-top: -172px;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px){
+	#banner{
+		margin-top: -172px;
+	}
+}
+@media (max-width: 575px){
+	/**====FIX LỖI CONTAINER====**/
+	.container-fluid{
+		padding-right: 0px;
+	}
+}

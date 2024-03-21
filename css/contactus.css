@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: Glamore;
+	src: url("../font/glamore-regular/Glamore Regular.otf"),
+		url("../font/glamore-regular/Glamore Regular.eot"),
+		url("../font/glamore-regular/Glamore Regular.woff");
+}
+@font-face{
+	font-family: SemiBold;
+	src: url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.ttf"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.eot"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.woff");
+}
+@font-face{
+	font-family: Regular;
+	src: url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.ttf"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.eot"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.woff");
+}
+@font-face{
+	font-family: Medium;
+	src: url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.ttf"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.eot"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.woff");
+}
+@font-face{
+	font-family: Light;
+	src: url("../font/montserrat/Montserrat-Light/Montserrat-Light.ttf"),
+		url("../font/montserrat/Montserrat-Light/Montserrat-Light.eot"),
+		url("../font/montserrat/Montserrat-Light/Montserrat-Light.woff");
+}
+@font-face{
+	font-family: Thin;
+	src: url("../font/montserrat/Montserrat-Thin/Montserrat-Thin.ttf"),
+		url("../font/montserrat/Montserrat-Thin/Montserrat-ThinItalic.eot"),
+		url("../font/montserrat/Montserrat-Thin/Montserrat-Thin.woff");
+}
+
+body{
+	font-family: Light;
+	 line-height: 1.6;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Glamore;
+	 line-height: 1.6;
+	color: #000;
+}
+
+.head{
+	text-align: center;
+	margin-bottom: 40px;
+	
+}
+
+/*====BREADCRUMB====*/
+#pagelink{
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+#pagelink ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pagelink ul li{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 16pt;
+}
+#pagelink ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 16pt;
+	color: #000000;
+	margin-top: 2px;
+	transition: all ease .5s;
+}
+.holdname{
+	color: #EF6351 !important;
+}
+/*Banner*/
+.carousel-indicators li{
+	border: solid 1pt #EF6351;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+}
+.carousel-indicators .active{
+	background-color: #EF6351;
+}
+.breadcrumb{
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.breadcrumb-item a{
+	color: #EF6351;
+}
+.btn-group{
+	background-color: #FFF;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	float: right;
+}
+.btn-secondary{
+	background-color: #EF6351;
+}
+.btn-secondary:hover{
+	background-color: #FFF;
+	color: #EF6351;	
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+	box-shadow: none;
+	background-color: #FFF;
+	border: solid 1pt #EF6351;
+	color: #EF6351;
+}
+.btn-secondary:focus, .btn-secondary.focus{
+	border: none;
+	background-color: #EF6351;
+	color: #FFF;	
+	box-shadow: none;
+}
+.hoverbtn{
+	display: block;
+	text-decoration: none;
+	background-color: #FBC3BC;
+	height: 50px;
+	color: #EF6351 !important;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all ease .5s;
+	border-radius: 5px;
+	border: none;
+}
+.hoverbtn:hover{
+	background-color: #EF6351;
+	color: #FCFCFC !important;
+	transition: all ease .5s;
+	
+}
+
+ /*====Pic====*/
+#bgpic{
+	
+	margin-top: 10px;
+	margin-bottom: 100px;
+	transition: all ease .3s;
+	-webkit-transition: .3s ease-in-out;
+  	transition: .3s ease-in-out;
+}
+.pic{
+	text-align: center;
+}
+.pic h4{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	color: #EF6351;
+	font-family: Light;
+}
+
+#bgcontact{
+	margin-bottom: 100px;
+}
+#bgcontact1{
+	background-image:url("../imgabout/CLE-Cosmetics-About-Banner_58628253-781d-4818-a62f-10d1a3b066fe.jpg");
+	background-repeat:no-repeat;
+	margin-bottom: 100px;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #EF6351;
+	border: none;
+}
+.btn-primary:hover {
+  color: #EF6351;
+  background-color: #FFF;
+  border: solid 1pt #EF6351;
+}
+.form-row{
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+#contentcontact{
+	line-height: 2;
+}
+/*ONLY XL*/
+@media(min-width: 1200px) {
+	.pic h4{
+	font-size: 20pt;
+	}
+	.pic{
+	padding-top: 10px;
+		margin-top: 30px;
+	}
+	#bgcontact1{
+	height: 300px;
+	}
+	img.bw{
+	height: 100px;
+	filter: grayscale(90%);
+	transition: all ease .5s;
+}
+img.bw:hover{
+	filter: grayscale(0%);
+	 transform: scale(1.3);
+  	transition: 1s;
+}
+	#content p{
+	font-size: 18pt;
+		
+}
+	#contentcontact h1{
+		font-size: 28pt;
+		text-align: left;
+	}
+	#banner{
+		margin-top: -172px;
+	}
+}
+/*ONLY LG*/
+@media(min-width: 992px) and (max-width: 1199px) {
+	.pic h4{
+	font-size: 18pt;
+	}
+	.pic{
+	padding-top: 30px;
+		margin-top: 30px;
+	}
+	#bgcontact1{
+	height: 300px;
+	}
+	img.bw{
+	height: 100px;
+	filter: grayscale(90%);
+	transition: all ease .5s;
+}
+img.bw:hover{
+	filter: grayscale(0%);
+	 transform: scale(1.3);
+  	transition: 1s;
+
+}
+	#content p{
+	font-size: 16pt;
+		
+}
+	#contentcontact h1{
+		font-size: 24pt;
+		text-align: left;
+	}
+	#banner{
+		margin-top: -172px;
+	}
+	}
+/*ONLY MD*/
+@media(min-width: 768px) and (max-width: 991px) {
+	.pic h4{
+	font-size: 12pt;
+	}
+	.pic{
+	padding-top: 30px;
+		margin-top: 30px;
+	}
+	#bgcontact1{
+	height: 300px;
+	}
+	img.bw{
+	height: 100px;
+	}
+	#content p{
+	font-size: 14pt;
+
+}
+	#contentcontact h1{
+		font-size: 18pt;
+		text-align: left;
+	}
+	}
+/*ONLY SM*/
+@media(min-width: 576px) and (max-width: 767px) {
+	#picabout img{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.pic h4{
+	font-size: 20pt;
+	}
+	.pic{
+	padding-top: 40px;
+		margin-top: 0px;
+	}
+	#bgcontact1{
+	height: 500px;
+	}
+	img.bw{
+	height: 100px;
+	}
+	#content p{
+	font-size: 16pt;
+}
+	#contentcontact h1{
+		font-size: 24pt;
+		text-align: center;
+}
+}
+/*ONLY XS*/
+@media(max-width: 575px) {
+	#picabout img{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.pic h4{
+	font-size: 14pt;
+	}.pic{
+	padding-top: 30px;
+		margin-top: 0px;
+	}
+	#bgcontact1{
+	height: 500px;
+	}
+	img.bw{
+	height: 100px;
+	}
+	#content p{
+	font-size: 14pt;
+}
+	#contentcontact h1{
+		font-size: 20pt;
+		text-align: center;
+	}
+}

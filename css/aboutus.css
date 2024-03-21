@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: Glamore;
+	src: url("../Fontface/glamore-regular/Glamore Regular.otf"),
+		url("../Fontface/glamore-regular/Glamore Regular.eot"),
+		url("../Fontface/glamore-regular/Glamore Regular.woff");
+}
+@font-face{
+	font-family: SemiBold;
+	src: url("../Fontface/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.ttf"),
+		url("../Fontface/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.eot"),
+		url("../Fontface/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.woff");
+}
+@font-face{
+	font-family: Regular;
+	src: url("../Fontface/montserrat/Montserrat-Regular/Montserrat-Regular.ttf"),
+		url("../Fontface/montserrat/Montserrat-Regular/Montserrat-Regular.eot"),
+		url("../Fontface/montserrat/Montserrat-Regular/Montserrat-Regular.woff");
+}
+@font-face{
+	font-family: Medium;
+	src: url(../Fontface/montserrat/Montserrat-Medium/Montserrat-Medium.ttf),
+		url("../Fontface/montserrat/Montserrat-Medium/Montserrat-Medium.eot"),
+		url("../Fontface/montserrat/Montserrat-Medium/Montserrat-Medium.woff");
+}
+@font-face{
+	font-family: Light;
+	src: url("../Fontface/montserrat/Montserrat-Light/Montserrat-Light.ttf"),
+		url("../Fontface/montserrat/Montserrat-Light/Montserrat-Light.eot"),
+		url("../Fontface/montserrat/Montserrat-Light/Montserrat-Light.woff");
+}
+@font-face{
+	font-family: Thin;
+	src: url("../Fontface/montserrat/Montserrat-Thin/Montserrat-Thin.ttf"),
+		url("../Fontface/montserrat/Montserrat-Thin/Montserrat-ThinItalic.eot"),
+		url("../Fontface/montserrat/Montserrat-Thin/Montserrat-Thin.woff");
+}
+
+/*====BREADCRUMB====*/
+#pagelink{
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+#pagelink ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pagelink ul li{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 16pt;
+}
+#pagelink ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 16pt;
+	color: #000000;
+	margin-top: 2px;
+	transition: all ease .5s;
+}
+.holdname{
+	color: #EF6351 !important;
+}
+.title{
+	text-align: center;
+	font-family: Glamore;
+	font-size: 28pt;
+}
+/*====about1====*/
+#textpromo{
+	color: white;
+	height: 60px;
+	font-size: 16pt;
+	font-style: Light !important; 
+}
+#bgabout1{
+	margin-bottom: 60px;
+}
+#picabout1, #picabout2, #picabout3{
+	display: block;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: 20px;
+	
+	
+}
+#picabout1 img, #picabout2 img, #picabout3 img{
+	padding-bottom: 30px;
+}
+#picabout1 h2, #picabout2 h2, #picabout3 h2{
+	padding-bottom: 20px;
+	font-family: Glamore;
+	
+	color: #000;
+}
+#picabout1 p, #picabout2 p, #picabout3 p{
+	line-height: 2;
+	text-align: justify;
+	font-family: Light;
+}
+#bgabout2{
+	background-image:url("../imgabout/pic.4.jpg");
+	background-repeat:no-repeat;
+	height: 500px;
+	margin-bottom: 100px;
+}
+#content2{
+	background-color:#FFFFFF;
+	object-position: center;
+	text-align: center;
+	font-family: Thin;
+	padding-top: 20px;
+	background: rgba(255, 255, 255, 0.4);
+}
+#content2 h4{
+	font-family: Glamore;
+	font-size: 36pt;
+	color: #EF6351;
+}
+#content h4{
+	font-family: Glamore;
+	color: #EF6351;
+}
+#content p{
+	font-family: Light;
+	
+	line-height: 1.75;
+}
+#bgabout3{
+	margin-top: 50px;
+}
+/*Banner*/
+.carousel-indicators li{
+	border: solid 1pt #EF6351;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+}
+.carousel-indicators .active{
+	background-color: #EF6351;
+}
+.breadcrumb{
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.breadcrumb-item a{
+	color: #EF6351;
+}
+.btn-group{
+	background-color: #FFF;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	float: right;
+}
+.btn-secondary{
+	background-color: #EF6351;
+}
+.btn-secondary:hover{
+	background-color: #FFF;
+	color: #EF6351;	
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+	box-shadow: none;
+	background-color: #FFF;
+	border: solid 1pt #EF6351;
+	color: #EF6351;
+}
+.btn-secondary:focus, .btn-secondary.focus{
+	border: none;
+	background-color: #EF6351;
+	color: #FFF;	
+	box-shadow: none;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ONLY XL*/
+@media(min-width: 1200px) {
+	#picabout1 h2, #picabout2 h2, #picabout3 h2{
+	font-size: 16pt;	
+}
+	#bgabout2{
+		padding-top: 100px;
+		}
+	#content2{
+		font-size: 24pt;
+	}
+	#content p{
+		text-align: left;
+		font-size: 24pt;
+}
+	#content h4{
+		font-size: 36pt;
+}
+	#banner{
+		margin-top: -172px;
+	}
+}
+/*ONLY LG*/
+@media(min-width: 992px) and (max-width: 1199px) {
+	#picabout1 h2, #picabout2 h2, #picabout3 h2{
+	font-size: 16pt;	
+	}
+	#bgabout2{
+		padding-top: 80px;
+		}
+	#content2{
+		font-size: 24pt;
+	}
+	#content p{
+		font-size: 20pt;
+		text-align: left;
+}
+	#content h4{
+		font-size: 36pt;
+}
+	#picabout1, #picabout2, #picabout3{
+	margin-bottom: 60px;	
+}
+	#banner{
+		margin-top: -172px;
+	}
+}
+/*ONLY MD*/
+@media(min-width: 768px) and (max-width: 991px) {
+	#picabout1 h2, #picabout2 h2, #picabout3 h2{
+	font-size: 16pt;
+	}
+	#bgabout2{
+		padding-top: 30px;
+		}
+	#content2{
+		font-size: 22pt;
+	}
+	#content p{
+		font-size: 16pt;
+		text-align: left;
+}
+	#picabout{
+	 	padding-top: 40px;
+}
+	#content h4{
+		font-size: 30pt;
+}
+	#picabout1, #picabout2, #picabout3{
+	margin-bottom: 60px;	
+}
+}
+/*ONLY SM*/
+@media(min-width: 576px) and (max-width: 767px) {
+	#picabout1 h2, #picabout2 h2, #picabout3 h2{
+		font-size: 20pt;
+	}
+	#bgabout2{
+		padding-top: 20px;
+		}
+	#content2{
+		font-size: 20pt;
+	}
+	#content p{
+		font-size: 16pt;
+		text-align: justify;
+}
+	#content h4{
+		padding-top: 20px;
+		font-size: 36pt;
+}
+	#picabout1, #picabout2, #picabout3{
+	margin-bottom: 20px;	
+}
+}
+/*ONLY XS*/
+@media(max-width: 575px) {
+	#picabout1 h2, #picabout2 h2, #picabout3 h2{
+		font-size: 20pt;
+	}
+	#bgabout2{
+		padding-top: 40px;
+		}
+	#content2{
+		font-size: 16pt;
+	}
+	#content p{
+		font-size: 16pt;
+		text-align: justify;
+}
+	#content h4{
+		padding-top: 20px;
+		font-size: 34pt;
+}
+	#picabout1, #picabout2, #picabout3{
+	margin-bottom: 20px;	
+}
+	/**====FIX LỖI CONTAINER====**/
+.container-fluid{
+	padding-right: 0px;
+}
+
+
+
+}
+
+

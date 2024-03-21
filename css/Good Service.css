@@ -1,0 +1,444 @@
+@charset "utf-8";
+/* CSS GOOD SERVICE */
+/*====FORMAT====*/
+@font-face{
+	font-family: Glamore;
+	src: url("../font/glamore-regular/Glamore Regular.otf"),
+		url("../font/glamore-regular/Glamore Regular.eot"),
+		url("../font/glamore-regular/Glamore Regular.woff");
+}
+@font-face{
+	font-family: SemiBold;
+	src: url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.ttf"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.eot"),
+		url("../font/montserrat/Montserrat-SemiBold/Montserrat-SemiBold.woff");
+}
+@font-face{
+	font-family: Regular;
+	src: url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.ttf"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.eot"),
+		url("../font/montserrat/Montserrat-Regular/Montserrat-Regular.woff");
+}
+@font-face{
+	font-family: mMedium;
+	src: url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.ttf"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.eot"),
+		url("../font/montserrat/Montserrat-Medium/Montserrat-Medium.woff");
+}
+@font-face{
+	font-family: tThin;
+	src: url("../font/Montserrat-Thin/Montserrat-Thin.ttf"),
+		url("../font/Montserrat-Thin/Montserrat-Thin.eot"),
+		url("../font/Montserrat-Thin/Montserrat-Thin.woff");
+}
+/*====FONT====*/
+body{
+	font-family: mMedium;
+}
+p3{
+	font-family: Regular;
+}
+/*====BANNER====*/
+.carousel-indicators li{
+	border: solid 1pt #EF6351;
+	border-radius: 50%;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+}
+.carousel-indicators .active{
+	background-color: #EF6351;
+}
+.breadcrumb{
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.breadcrumb-item a{
+	color: #EF6351;
+}
+.btn-group{
+	background-color: #FFF;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	float: right;
+}
+.btn-secondary{
+	background-color: #EF6351;
+}
+.btn-secondary:hover{
+	background-color: #FFF;
+	color: #EF6351;	
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+	box-shadow: none;
+	background-color: #FFF;
+	border: solid 1pt #EF6351;
+	color: #EF6351;
+}
+.btn-secondary:focus, .btn-secondary.focus{
+	border: none;
+	background-color: #EF6351;
+	color: #FFF;	
+	box-shadow: none;
+}
+/*====BREADCRUMB====*/
+#pagelink{
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+#pagelink ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pagelink ul li{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 16pt;
+}
+#pagelink ul li a{
+	display: block;
+	text-decoration: none;
+	font-size: 16pt;
+	color: #000000;
+	margin-top: 2px;
+	transition: all ease .5s;
+}
+.holdname{
+	color: #EF6351 !important;
+}
+/*====PROBLEMS====*/
+.problems p4{
+	font-size: 24pt;
+}
+.problems ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.problems ul li{
+	display: block;
+}
+.problems ul li a{
+	display: block;
+	color: #EF6351;
+	margin-bottom: 15px;
+	text-decoration: none;
+	transition: all ease .5s;
+}
+
+/*====CÁC PHIÊN BẢN====*/
+@media (min-width:1200px){
+	.safety{
+		margin-top: 30px;
+	}
+	.backed{
+		margin-top: 50px;
+		text-align: right;
+	}
+	.proven{
+		margin-top: 60px;
+	}
+	.safety p1{
+		font-family: Glamore;
+		font-size: 28pt;
+		color: #000;
+	}
+	.safety p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -8px;
+		margin-bottom: 20px;
+	}
+	.backed p1{
+		font-family: Glamore;
+		font-size: 28pt;
+		color: #000;
+
+	}
+	.backed p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+	.proven p1{
+		font-family: Glamore;
+		font-size: 28pt;
+		color: #000;
+	}
+	.proven p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+	.problems ul li a:hover{
+		color: #EF6351;
+		text-decoration: underline;
+		transition: all ease .5s;
+	}
+	/**====BANNER====**/
+	#banner1{
+		height: 600px;
+		margin-top: -162px;
+	}
+}
+@media (min-width:992px) and (max-width:1199px){
+	.safety{
+		margin-top: 15px;
+	}
+	.backed{
+		margin-top: 60px;
+		text-align: right;
+	}
+	.proven{
+		margin-top: 20px;
+	}
+		.safety p1{
+		font-family: Glamore;
+		font-size: 28px;
+		color: #EF6351;
+	}
+	.safety p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -8px;
+		margin-bottom: 20px;
+	}
+
+	.backed p1{
+		font-family: Glamore;
+		font-size: 28px;
+		color: #EF6351;
+
+	}
+	.backed p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+
+	.proven p1{
+		font-family: Glamore;
+		font-size: 28px;
+		color: #EF6351;
+	}
+	.proven p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	.safetyimg{
+		width: 435px;
+		position: absolute;
+		z-index: 1;
+		margin-top:10px; 
+	}
+	.provenimg{
+		width: 435px;
+		position: absolute;
+		z-index: 1;
+		margin-top:20px; 
+	}
+	.problems ul li a:hover{
+		color: #EF6351;
+		text-decoration: underline;
+		transition: all ease .5s;
+	}
+	#banner1{
+		width: 100%;
+		margin-top: -132px;
+	}
+}
+@media (min-width:768px) and (max-width:991px){
+	.safety{
+		margin-top: 20px;
+	}
+	.backed{
+		margin-top: 20px;
+		text-align: left;
+	}
+	.proven{
+		margin-top: 20px;
+	}
+		.safety p1{
+		font-family: Glamore;
+		font-size: 28pt;
+		color: #000;
+	}
+	.safety p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	.backed p1{
+		font-family: Glamore;
+		font-size: 28pt;
+		color: #000;
+
+	}
+	.backed p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+	.proven p1{
+		font-family: Glamore;
+		font-size: 28pt;
+		color: #000;
+	}
+	.proven p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+}
+@media (min-width:576px) and (max-width:767px){
+	.safety{
+		margin-top: 20px;
+	}
+	.backed{
+		margin-top: 20px;
+		text-align: left;
+	}
+	.proven{
+		margin-top: 20px;
+	}
+		.safety p1{
+		font-family: Glamore;
+		font-size: 20pt;
+		color: #000;
+	}
+	.safety p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	.backed p1{
+		font-family: Glamore;
+		font-size: 20pt;
+		color: #000;
+
+	}
+	.backed p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	.proven p1{
+		font-family: Glamore;
+		font-size: 20pt;
+		color: #000;
+	}
+	.proven p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+}
+@media (max-width:575px){
+	.safety{
+		margin-top: 30px;
+	}
+	.backed{
+		margin-top: 50px;
+		text-align: left;
+	}
+	.proven{
+		margin-top: 90px;
+	}
+		.safety p1{
+		font-family: Glamore;
+		font-size: 20pt;
+		color: #000;
+	}
+	.safety p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	.backed p1{
+		font-family: Glamore;
+		font-size: 20pt;
+		color: #000;
+
+	}
+	.backed p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	.proven p1{
+		font-family: Glamore;
+		font-size: 20pt;
+		color: #000;
+	}
+	.proven p2{
+		display: block;
+		font-family: Regular;
+		font-size: 12px;
+		color: #D9D9D9;
+		margin-top: -10px;
+		margin-bottom: 20px;
+
+	}
+	/**====FIX LỖI CONTAINER====**/
+	.container-fluid{
+		padding-right: 0px;
+	}
+}
+
+
+
+
