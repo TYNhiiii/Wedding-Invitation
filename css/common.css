@@ -686,8 +686,8 @@ body{
   }
 }
 .centered-text {
-	font-family: Medium; 
-  font-size: 20pt; /* size of your text */
+	font-family: Alex; 
+  font-size: 30pt; /* size of your text */
   color: #EF6351; /* color of your text */
   /* Add more styling as needed */
 	text-shadow: 
@@ -699,7 +699,7 @@ body{
 .background-layer {
   position: relative;
   background-image: url('../imgabout/2148029269.jpg');
-	opacity: 0.9;
+	opacity: 0.6;
   background-size: cover;
   height: 500px; /* Adjust the height as needed */
 	text-align: center;
