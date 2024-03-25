@@ -405,8 +405,8 @@ body{
 		background-color: #EF6351;
 	}
 	
-	.texth2{
-		font-size: 10pt;
+	.texth2 h2{
+		font-size: 14pt !important;
 	}
 	.text-with-lines .text{
 		font-size: 14pt;
