@@ -698,8 +698,10 @@ body{
 }
 .background-layer {
   position: relative;
-  background-image: url('../imgabout/2148029269.jpg');
-	opacity: 0.6;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),  url('../imgabout/2148029269.jpg');
+  background-size: cover;
+
+
   background-size: cover;
   height: 500px; /* Adjust the height as needed */
 	text-align: center;
