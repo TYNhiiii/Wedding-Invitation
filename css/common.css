@@ -49,7 +49,7 @@ body{
     }
 
     .carousel-caption {
-      bottom: 20%;
+      
     }
    .text-with-lines {
   display: flex;
@@ -406,7 +406,7 @@ body{
 	}
 	
 	.texth2 h2{
-		font-size: 14pt !important;
+		font-size: 16pt !important;
 	}
 	.text-with-lines .text{
 		font-size: 14pt;
