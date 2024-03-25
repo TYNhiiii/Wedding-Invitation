@@ -716,6 +716,14 @@ body{
   border-radius: 15px; /* Adjust the pixel value to increase or decrease the roundness */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adjust values for x-offset, y-offset, blur-radius, and color as needed */
 }
+h5.card-title {
+    font-size: 22pt;
+    color: #EF6351;
+    font-family: 'Regular';
+}
+.card-body text-center{
+	padding-top: 0px;
+}
 
 
 
