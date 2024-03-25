@@ -49,6 +49,9 @@ body{
     }
 
     .carousel-caption {
+	right: 0%; */
+  	bottom: 0px;
+    /* left: 15%;
       
     }
    .text-with-lines {
