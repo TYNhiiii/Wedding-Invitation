@@ -577,12 +577,13 @@ body{
   }
 }
 .card {
- 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: box-shadow 0.3s;
-  border-radius: 10px;
-  padding-top: 10px;
-  border: none;
-  margin: 1rem;
+ 	width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    margin: 1rem;
 }
 .card:hover {
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3); 
