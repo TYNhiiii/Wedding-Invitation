@@ -724,17 +724,33 @@ h5.card-title {
     color: #EF6351;
     font-family: 'Regular';
 }
-.card-body text-center1{
+.card-body text-center{
 	text-align: center;
 	padding-top: 0px;
 }
 .text-center {
   text-align: center;
-	margin-top: 0px;
+	margin-top: 60px;
 }
 
 /* Adjust image and title container */
 .text-center img {
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add space below */
+}
+
+
+.card-body text-center1{
+	text-align: center;
+	padding-top: 0px;
+}
+.text-center1 {
+  text-align: center;
+	margin-top: 0px;
+}
+
+/* Adjust image and title container */
+.text-center1 img {
   display: block;
   margin: 0 auto 10px; /* Center the image and add space below */
 }
