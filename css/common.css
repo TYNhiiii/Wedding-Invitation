@@ -754,6 +754,9 @@ h5.card-title {
   display: block;
   margin: 0 auto 10px; /* Center the image and add space below */
 }
+.mt-5, .my-5 {
+    margin-top: 0px !important;
+}
 
 
 
