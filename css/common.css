@@ -728,13 +728,13 @@ h5.card-title {
 	text-align: center;
 	padding-top: 0px;
 }
-.text-center1 {
+.text-center {
   text-align: center;
 	margin-top: 0px;
 }
 
 /* Adjust image and title container */
-.text-center1 img {
+.text-center img {
   display: block;
   margin: 0 auto 10px; /* Center the image and add space below */
 }
