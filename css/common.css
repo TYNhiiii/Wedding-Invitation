@@ -494,15 +494,10 @@ body{
 }
 
 /* Ensure the title is centered on the page */
-.text-center {
-  text-align: center;
-}
 
-/* Adjust image and title container */
-.text-center img {
-  display: block;
-  margin: 0 auto 10px; /* Center the image and add space below */
-}
+
+
+
 
 /* Responsive adjustments for the title decoration */
 @media (max-width: 768px) {
@@ -731,6 +726,16 @@ h5.card-title {
 }
 .card-body text-center{
 	padding-top: 0px;
+}
+.text-center1 {
+  text-align: center;
+	margin-top: 0px;
+}
+
+/* Adjust image and title container */
+.text-center1 img {
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add space below */
 }
 
 
