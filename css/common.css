@@ -724,7 +724,8 @@ h5.card-title {
     color: #EF6351;
     font-family: 'Regular';
 }
-.card-body text-center{
+.card-body text-center1{
+	text-align: center;
 	padding-top: 0px;
 }
 .text-center1 {
